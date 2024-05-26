@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 1170px;
+  margin: auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+#accordion{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#accordion .row{
+  justify-content: space-between;
+}
+#accordion .qsn{
+  background-color: #3f5b68;
+  padding: 20px;
+  color: #ffff;
+  cursor: pointer;
+}
+#accordion .qsn.active ~ .ans{
+  height: auto;
+  padding: 20px;
+}
+#accordion .ans{
+  background-color:#ccc ;
+  margin: 5px 0;
+  height: 0;
+  overflow: hidden;
+}
